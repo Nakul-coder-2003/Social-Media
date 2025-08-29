@@ -36,7 +36,6 @@ const SignIn = () => {
         { withCredentials: true }
       );
       dispatch(setUserData(res.data))
-      alert(res.data.message);
       setLoading(false);
       setUserName("");
       setPassword("");
