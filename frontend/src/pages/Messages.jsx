@@ -135,7 +135,7 @@ const Messages = () => {
             src={userData?.profileImg || logo}
             alt="profile"
             onClick={() => navigate(`/profile/${userData?.userName}`)}
-            className="w:8 h:8 md:w-10 md:h-10 rounded-full border border-gray-400 object-cover cursor-pointer"
+            className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-400 object-cover cursor-pointer"
           />
           <input
             type="text"
