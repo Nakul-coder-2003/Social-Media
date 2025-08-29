@@ -135,21 +135,21 @@ const Messages = () => {
             src={userData?.profileImg || logo}
             alt="profile"
             onClick={() => navigate(`/profile/${userData?.userName}`)}
-            className="w-10 h-10 rounded-full border border-gray-400 object-cover cursor-pointer"
+            className="w:8 h:8 md:w-10 md:h-10 rounded-full border border-gray-400 object-cover cursor-pointer"
           />
           <input
             type="text"
             placeholder="Messages.."
-            className="flex-1 px-3  text-[18px] text-white outline-0"
+            className="flex-1 px-3  text-sm md:text-[18px] text-white outline-0"
             onChange={(e) => setInput(e.target.value)}
             value={input}
           />
           <div onClick={() => inputImg.current.click()}>
-            <LuImage className="w-[25px] h-[25px] text-white cursor-pointer" />
+            <LuImage className="w-[16px] h-[16px] md:w-[25px] md:h-[25px] text-white cursor-pointer" />
           </div>
           {(input || frontendImg) && (
-            <button className="w-[60px] h-[40px] rounded-full bg-gradient-to-br from-[#9500ff] to-[#ff0095] flex items-center justify-center">
-              <LuSendHorizontal className="w-[22px] h-[22px] text-white font-bold cursor-pointer" />
+            <button className="w-[30px] h-[30px] md:w-[60px] md:h-[40px] rounded-full bg-gradient-to-br from-[#9500ff] to-[#ff0095] flex items-center justify-center">
+              <LuSendHorizontal className="w-[16px] h-[16px] md:w-[22px] md:h-[22px] text-white font-bold cursor-pointer" />
             </button>
           )}
         </form>
