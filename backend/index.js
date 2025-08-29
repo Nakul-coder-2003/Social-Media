@@ -13,7 +13,7 @@ import { app, server } from "./socket.js";
 
 dotenv.config();
 
-const port = 8000;
+// const port = 8000;
 
 app.use(cors({
     origin: "https://social-media-v9zj.onrender.com",
@@ -28,7 +28,7 @@ app.use("/api/reel",reelRoute)
 app.use("/api/story",storyRoute)
 app.use("/api/message",messageRoute)
 
-server.listen(port,()=>{
+server.listen(process.env.PORT,()=>{
     connectDB()
-    console.log(`server is running on port ${port}`)
+    console.log(`server is running on port ${process.env.PORT}`)
 })
