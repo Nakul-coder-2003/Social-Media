@@ -24,7 +24,7 @@ import Story from "./pages/Story";
 import useGetAllStory from "./hooks/useGetAllStory";
 import Search from "./pages/Search";
 
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://social-media-backend-mjng.onrender.com";
 const App = () => {
   useGetCurrentUser();
   useGetSuggestedUser();
