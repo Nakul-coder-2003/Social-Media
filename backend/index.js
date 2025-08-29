@@ -16,7 +16,7 @@ dotenv.config();
 const port = 8000;
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://social-media-v9zj.onrender.com",
     credentials:true
 }))
 app.use(express.json())
